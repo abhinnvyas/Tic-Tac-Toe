@@ -111,6 +111,7 @@ def main(elements):
     board(elements)
     take_inputs(elements)
     os.system("cls")
+    print("TIC TAC TOE | by-Abhinn Vyas")
     board(elements)
     if winnner(elements):
         flag = input("Do you wanna play again? [Y/N]: ")
@@ -119,6 +120,7 @@ def main(elements):
             initialize(elements)
         else:
             print("Have a Great Day!\nBye!")
+            exit()
     else:
         main(elements)
 
